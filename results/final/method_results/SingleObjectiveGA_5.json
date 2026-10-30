@@ -1,0 +1,194 @@
+{
+  "method": "SingleObjectiveGA_5",
+  "selected_feature_count": 5,
+  "selected_features": [
+    "TRANSITION_CH040_krogks",
+    "TRANSITION_CH062_gNDVI",
+    "LATE_CH013_Rhh",
+    "LATE_CH026_l2",
+    "LATE_CH031_HA"
+  ],
+  "metrics": {
+    "accuracy": 0.9734221308330904,
+    "macro_f1": 0.9688593225310423,
+    "weighted_f1": 0.9734136829147458,
+    "kappa": 0.9663890726837384
+  },
+  "classwise": [
+    {
+      "class_label": 1,
+      "class_name": "Corn",
+      "precision": 0.9654171399722328,
+      "recall": 0.9766343207354443,
+      "f1": 0.9709933354490637,
+      "support": 7832
+    },
+    {
+      "class_label": 2,
+      "class_name": "Peas",
+      "precision": 0.9972222222222222,
+      "recall": 0.9972222222222222,
+      "f1": 0.9972222222222222,
+      "support": 720
+    },
+    {
+      "class_label": 3,
+      "class_name": "Canola",
+      "precision": 0.983024998342285,
+      "recall": 0.9795176742649488,
+      "f1": 0.9812682022769393,
+      "support": 15135
+    },
+    {
+      "class_label": 4,
+      "class_name": "Soybeans",
+      "precision": 0.9799755633994026,
+      "recall": 0.9746168905690947,
+      "f1": 0.9772888813674057,
+      "support": 14813
+    },
+    {
+      "class_label": 5,
+      "class_name": "Oats",
+      "precision": 0.952808988764045,
+      "recall": 0.9449219993632602,
+      "f1": 0.948849104859335,
+      "support": 9423
+    },
+    {
+      "class_label": 6,
+      "class_name": "Wheat",
+      "precision": 0.9740805604203152,
+      "recall": 0.980664119894211,
+      "f1": 0.9773612534778152,
+      "support": 17015
+    },
+    {
+      "class_label": 7,
+      "class_name": "Broadleaf",
+      "precision": 0.9152542372881356,
+      "recall": 0.9432314410480349,
+      "f1": 0.9290322580645162,
+      "support": 229
+    }
+  ],
+  "confusion_matrix": [
+    [
+      7649,
+      0,
+      52,
+      100,
+      11,
+      12,
+      8
+    ],
+    [
+      1,
+      718,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      98,
+      0,
+      14825,
+      108,
+      95,
+      9,
+      0
+    ],
+    [
+      94,
+      2,
+      132,
+      14437,
+      82,
+      66,
+      0
+    ],
+    [
+      52,
+      0,
+      55,
+      48,
+      8904,
+      356,
+      8
+    ],
+    [
+      19,
+      0,
+      15,
+      39,
+      252,
+      16686,
+      4
+    ],
+    [
+      10,
+      0,
+      1,
+      0,
+      1,
+      1,
+      216
+    ]
+  ],
+  "class_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ECI": 0.9999999999999999,
+  "runtime_seconds": 35.87005170000339,
+  "runtime_components_seconds": {
+    "selection": 22.220185900001525,
+    "final_xgboost_fit": 13.197415300001012,
+    "test_prediction_and_metrics": 0.4524505000008503
+  },
+  "test_rows": 65167,
+  "train_rows": 260667,
+  "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_evaluated_once": true,
+  "test_set_used_for_selection_or_tuning": false,
+  "selection_details": {
+    "search_sample_size": 10000,
+    "fit_rows": 8000,
+    "validation_rows": 2000,
+    "n_estimators": 30,
+    "same_seed42_search_sample_as_CAMO_FS": true,
+    "test_rows_used": false,
+    "population_size": 20,
+    "generations": 10,
+    "objective": "maximize Macro-F1 only",
+    "k_constraint": 5,
+    "crossover": "uniform, p=0.9",
+    "mutation": "uniform random one-feature swap, p=0.25",
+    "random_state": 42,
+    "best_search_macro_f1": 0.9440065280931496,
+    "unique_model_fits": 159
+  },
+  "final_model_configuration": {
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 1,
+    "num_class": 7
+  },
+  "prediction_artifact": "results\\final\\method_results\\SingleObjectiveGA_5_test_predictions.npz"
+}

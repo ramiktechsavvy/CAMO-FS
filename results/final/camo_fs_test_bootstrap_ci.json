@@ -1,0 +1,13 @@
+{
+  "method": "nonparametric row bootstrap of the one saved test prediction vector; not independent experimental runs",
+  "replicates": 1000,
+  "seed": 42,
+  "accuracy_95_percentile_ci": [
+    0.9778108551874415,
+    0.980081943314868
+  ],
+  "macro_f1_95_percentile_ci": [
+    0.9642843569211279,
+    0.9726298317192011
+  ]
+}

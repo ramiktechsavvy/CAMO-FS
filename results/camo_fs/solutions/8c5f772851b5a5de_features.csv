@@ -1,0 +1,9 @@
+feature_index_zero_based,feature_name,representation,channel_id,source_july5_column,source_july14_column,sensor,measurement_name,date_early,date_late,transformation
+7,EARLY_CH008_Rhvhh,EARLY,CH008,f8,f57,radar,Rhvhh,2012-07-05,2012-07-14,identity: July 5 measurement
+45,EARLY_CH046_yamodd,EARLY,CH046,f46,f95,radar,yamodd,2012-07-05,2012-07-14,identity: July 5 measurement
+57,EARLY_CH058_EVI,EARLY,CH058,f107,f145,optical,EVI,2012-07-05,2012-07-14,identity: July 5 measurement
+137,TRANSITION_CH051_G,TRANSITION,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+141,TRANSITION_CH055_NDVI,TRANSITION,CH055,f104,f142,optical,NDVI,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+176,LATE_CH003_sigVV,LATE,CH003,f3,f52,radar,sigVV,2012-07-05,2012-07-14,identity: July 14 measurement
+188,LATE_CH015_Rvv,LATE,CH015,f15,f64,radar,Rvv,2012-07-05,2012-07-14,identity: July 14 measurement
+200,LATE_CH027_l3,LATE,CH027,f27,f76,radar,l3,2012-07-05,2012-07-14,identity: July 14 measurement

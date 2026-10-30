@@ -1,0 +1,27 @@
+{
+  "method": "CAMO_FS_5",
+  "selected_features": [
+    "TRANSITION_CH051_G",
+    "TRANSITION_CH055_NDVI",
+    "LATE_CH003_sigVV",
+    "LATE_CH015_Rvv",
+    "LATE_CH027_l3"
+  ],
+  "selected_feature_indices_zero_based": [
+    137,
+    141,
+    176,
+    188,
+    200
+  ],
+  "selection_runtime_seconds": 537.2664738000021,
+  "selection_details": {
+    "selection_source": "saved results/camo_fs/final_solution.json",
+    "optimization_runtime_included": 537.2664738000021,
+    "full_training_cv_macro_f1": 0.9690733416213796,
+    "test_used_for_selection": false
+  },
+  "training_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_features_or_labels_used_for_selection": false
+}

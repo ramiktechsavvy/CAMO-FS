@@ -1,0 +1,186 @@
+{
+  "method": "RandomForest_5",
+  "selected_feature_count": 5,
+  "selected_features": [
+    "TRANSITION_CH064_NDVIre",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH062_gNDVI",
+    "TRANSITION_CH051_G"
+  ],
+  "metrics": {
+    "accuracy": 0.9168137247379808,
+    "macro_f1": 0.8640977857129443,
+    "weighted_f1": 0.9163983935776824,
+    "kappa": 0.8946580021366817
+  },
+  "classwise": [
+    {
+      "class_label": 1,
+      "class_name": "Corn",
+      "precision": 0.9361381389612169,
+      "recall": 0.8721910112359551,
+      "f1": 0.9030339083878643,
+      "support": 7832
+    },
+    {
+      "class_label": 2,
+      "class_name": "Peas",
+      "precision": 0.9425287356321839,
+      "recall": 0.9111111111111111,
+      "f1": 0.9265536723163842,
+      "support": 720
+    },
+    {
+      "class_label": 3,
+      "class_name": "Canola",
+      "precision": 0.9922286617492097,
+      "recall": 0.9954410307234886,
+      "f1": 0.9938322504040371,
+      "support": 15135
+    },
+    {
+      "class_label": 4,
+      "class_name": "Soybeans",
+      "precision": 0.9321091426354584,
+      "recall": 0.9731992169040707,
+      "f1": 0.9522111034050001,
+      "support": 14813
+    },
+    {
+      "class_label": 5,
+      "class_name": "Oats",
+      "precision": 0.7952847068729607,
+      "recall": 0.8018677703491457,
+      "f1": 0.79856267173959,
+      "support": 9423
+    },
+    {
+      "class_label": 6,
+      "class_name": "Wheat",
+      "precision": 0.8956197024479877,
+      "recall": 0.8880399647369968,
+      "f1": 0.8918137283834032,
+      "support": 17015
+    },
+    {
+      "class_label": 7,
+      "class_name": "Broadleaf",
+      "precision": 0.7302631578947368,
+      "recall": 0.4847161572052402,
+      "f1": 0.5826771653543307,
+      "support": 229
+    }
+  ],
+  "confusion_matrix": [
+    [
+      6831,
+      3,
+      20,
+      902,
+      31,
+      32,
+      13
+    ],
+    [
+      2,
+      656,
+      33,
+      28,
+      0,
+      1,
+      0
+    ],
+    [
+      4,
+      24,
+      15066,
+      20,
+      9,
+      12,
+      0
+    ],
+    [
+      271,
+      13,
+      19,
+      14416,
+      54,
+      33,
+      7
+    ],
+    [
+      122,
+      0,
+      14,
+      66,
+      7556,
+      1658,
+      7
+    ],
+    [
+      18,
+      0,
+      17,
+      27,
+      1829,
+      15110,
+      14
+    ],
+    [
+      49,
+      0,
+      15,
+      7,
+      22,
+      25,
+      111
+    ]
+  ],
+  "class_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ECI": 0.9999999999999999,
+  "runtime_seconds": 24.010919599997578,
+  "runtime_components_seconds": {
+    "selection": 9.352285699998902,
+    "final_xgboost_fit": 14.19528039999932,
+    "test_prediction_and_metrics": 0.46335349999935715
+  },
+  "test_rows": 65167,
+  "train_rows": 260667,
+  "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_evaluated_once": true,
+  "test_set_used_for_selection_or_tuning": false,
+  "selection_details": {
+    "selector": "RandomForestClassifier embedded feature_importances_",
+    "sample_rows": 60000,
+    "n_estimators": 80,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "training_only": true
+  },
+  "final_model_configuration": {
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 1,
+    "num_class": 7
+  },
+  "prediction_artifact": "results\\final\\method_results\\RandomForest_5_test_predictions.npz"
+}

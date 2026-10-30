@@ -1,0 +1,20 @@
+feature_index_zero_based,feature_name,representation,channel_id,source_july5_column,source_july14_column,sensor,measurement_name,date_early,date_late,transformation
+4,EARLY_CH005_sigRL,EARLY,CH005,f5,f54,radar,sigRL,2012-07-05,2012-07-14,identity: July 5 measurement
+28,EARLY_CH029_A,EARLY,CH029,f29,f78,radar,A,2012-07-05,2012-07-14,identity: July 5 measurement
+44,EARLY_CH045_freevol,EARLY,CH045,f45,f94,radar,freevol,2012-07-05,2012-07-14,identity: July 5 measurement
+45,EARLY_CH046_yamodd,EARLY,CH046,f46,f95,radar,yamodd,2012-07-05,2012-07-14,identity: July 5 measurement
+49,EARLY_CH050_B,EARLY,CH050,f99,f137,optical,B,2012-07-05,2012-07-14,identity: July 5 measurement
+50,EARLY_CH051_G,EARLY,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,identity: July 5 measurement
+52,EARLY_CH053_Redge,EARLY,CH053,f102,f140,optical,Redge,2012-07-05,2012-07-14,identity: July 5 measurement
+57,EARLY_CH058_EVI,EARLY,CH058,f107,f145,optical,EVI,2012-07-05,2012-07-14,identity: July 5 measurement
+65,EARLY_CH066_NDGIre,EARLY,CH066,f115,f153,optical,NDGIre,2012-07-05,2012-07-14,identity: July 5 measurement
+113,TRANSITION_CH027_l3,TRANSITION,CH027,f27,f76,radar,l3,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+137,TRANSITION_CH051_G,TRANSITION,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+141,TRANSITION_CH055_NDVI,TRANSITION,CH055,f104,f142,optical,NDVI,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+166,TRANSITION_CH080_MeanPC2,TRANSITION,CH080,f129,f167,optical,MeanPC2,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+181,LATE_CH008_Rhvhh,LATE,CH008,f8,f57,radar,Rhvhh,2012-07-05,2012-07-14,identity: July 14 measurement
+188,LATE_CH015_Rvv,LATE,CH015,f15,f64,radar,Rvv,2012-07-05,2012-07-14,identity: July 14 measurement
+203,LATE_CH030_a,LATE,CH030,f30,f79,radar,a,2012-07-05,2012-07-14,identity: July 14 measurement
+218,LATE_CH045_freevol,LATE,CH045,f45,f94,radar,freevol,2012-07-05,2012-07-14,identity: July 14 measurement
+219,LATE_CH046_yamodd,LATE,CH046,f46,f95,radar,yamodd,2012-07-05,2012-07-14,identity: July 14 measurement
+237,LATE_CH064_NDVIre,LATE,CH064,f113,f151,optical,NDVIre,2012-07-05,2012-07-14,identity: July 14 measurement

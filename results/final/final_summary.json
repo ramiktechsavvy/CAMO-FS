@@ -1,0 +1,821 @@
+{
+  "dataset": {
+    "source": "UCI Crop Mapping using Fused Optical-Radar Dataset #525",
+    "rows": 325834,
+    "feature_count": 261,
+    "class_count": 7,
+    "class_names": {
+      "1": "Corn",
+      "2": "Peas",
+      "3": "Canola",
+      "4": "Soybeans",
+      "5": "Oats",
+      "6": "Wheat",
+      "7": "Broadleaf"
+    },
+    "representations": {
+      "EARLY": "July 5",
+      "TRANSITION": "July 14 - July 5",
+      "LATE": "July 14"
+    },
+    "biological_stage_mapping_verified": false
+  },
+  "split": {
+    "method": "sklearn.model_selection.train_test_split with stratify=label",
+    "seed": 42,
+    "train_rows": 260667,
+    "test_rows": 65167,
+    "class_distributions": {
+      "full_class_distribution": {
+        "1": {
+          "count": 39162,
+          "proportion": 0.12019003541680733
+        },
+        "2": {
+          "count": 3598,
+          "proportion": 0.011042432649754168
+        },
+        "3": {
+          "count": 75673,
+          "proportion": 0.23224402609917932
+        },
+        "4": {
+          "count": 74067,
+          "proportion": 0.22731513592811065
+        },
+        "5": {
+          "count": 47117,
+          "proportion": 0.14460430771497143
+        },
+        "6": {
+          "count": 85074,
+          "proportion": 0.2610961409797627
+        },
+        "7": {
+          "count": 1143,
+          "proportion": 0.0035079212114144014
+        }
+      },
+      "train_class_distribution": {
+        "1": {
+          "count": 31330,
+          "proportion": 0.12019166215899979
+        },
+        "2": {
+          "count": 2878,
+          "proportion": 0.011040906597306142
+        },
+        "3": {
+          "count": 60538,
+          "proportion": 0.23224266976640695
+        },
+        "4": {
+          "count": 59254,
+          "proportion": 0.22731684486336973
+        },
+        "5": {
+          "count": 37694,
+          "proportion": 0.14460595318931818
+        },
+        "6": {
+          "count": 68059,
+          "proportion": 0.2610955740465805
+        },
+        "7": {
+          "count": 914,
+          "proportion": 0.0035063893780186983
+        }
+      },
+      "test_class_distribution": {
+        "1": {
+          "count": 7832,
+          "proportion": 0.12018352847300014
+        },
+        "2": {
+          "count": 720,
+          "proportion": 0.011048536836128716
+        },
+        "3": {
+          "count": 15135,
+          "proportion": 0.23224945140945571
+        },
+        "4": {
+          "count": 14813,
+          "proportion": 0.22730830021329815
+        },
+        "5": {
+          "count": 9423,
+          "proportion": 0.14459772584283456
+        },
+        "6": {
+          "count": 17015,
+          "proportion": 0.2610984087037918
+        },
+        "7": {
+          "count": 229,
+          "proportion": 0.0035140485214909386
+        }
+      }
+    },
+    "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+    "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+    "test_touched_only_for_final_evaluation": true
+  },
+  "baseline_metrics": {
+    "metrics": {
+      "accuracy": 0.9975601147820216,
+      "macro_f1": 0.9941128208480258,
+      "weighted_f1": 0.9975616744937909,
+      "cohen_kappa": 0.9969143580455272
+    },
+    "classwise": [
+      {
+        "class_label": 1,
+        "class_name": "Corn",
+        "precision": 0.9983386581469648,
+        "recall": 0.9974463738508682,
+        "f1": 0.9978923165357348,
+        "support": 7832
+      },
+      {
+        "class_label": 2,
+        "class_name": "Peas",
+        "precision": 1.0,
+        "recall": 0.9986111111111112,
+        "f1": 0.9993050729673384,
+        "support": 720
+      },
+      {
+        "class_label": 3,
+        "class_name": "Canola",
+        "precision": 0.9990751139591728,
+        "recall": 0.999207135777998,
+        "f1": 0.9991411205073996,
+        "support": 15135
+      },
+      {
+        "class_label": 4,
+        "class_name": "Soybeans",
+        "precision": 0.9981759221726794,
+        "recall": 0.9974346857490044,
+        "f1": 0.997805166300861,
+        "support": 14813
+      },
+      {
+        "class_label": 5,
+        "class_name": "Oats",
+        "precision": 0.9956433960259272,
+        "recall": 0.9943754642895044,
+        "f1": 0.99500902622916,
+        "support": 9423
+      },
+      {
+        "class_label": 6,
+        "class_name": "Wheat",
+        "precision": 0.996888758438509,
+        "recall": 0.9980605348222156,
+        "f1": 0.997474302496329,
+        "support": 17015
+      },
+      {
+        "class_label": 7,
+        "class_name": "Broadleaf",
+        "precision": 0.953781512605042,
+        "recall": 0.9912663755458516,
+        "f1": 0.9721627408993576,
+        "support": 229
+      }
+    ],
+    "runtime_seconds": {
+      "fit": 131.8265958999982,
+      "final_evaluation": 0.6104462000002968,
+      "total": 135.43131859999994
+    },
+    "selected_feature_count": 261
+  },
+  "camo_fs_metrics": {
+    "method": "CAMO_FS_5",
+    "selected_feature_count": 5,
+    "selected_features": [
+      "TRANSITION_CH051_G",
+      "TRANSITION_CH055_NDVI",
+      "LATE_CH003_sigVV",
+      "LATE_CH015_Rvv",
+      "LATE_CH027_l3"
+    ],
+    "metrics": {
+      "accuracy": 0.9789310540611046,
+      "macro_f1": 0.968552239821049,
+      "weighted_f1": 0.9789200474142208,
+      "kappa": 0.9733509140798849
+    },
+    "classwise": [
+      {
+        "class_label": 1,
+        "class_name": "Corn",
+        "precision": 0.9840357598978289,
+        "recall": 0.9837844739530133,
+        "f1": 0.9839101008811135,
+        "support": 7832
+      },
+      {
+        "class_label": 2,
+        "class_name": "Peas",
+        "precision": 0.9793956043956044,
+        "recall": 0.9902777777777778,
+        "f1": 0.9848066298342542,
+        "support": 720
+      },
+      {
+        "class_label": 3,
+        "class_name": "Canola",
+        "precision": 0.9964328180737217,
+        "recall": 0.9966303270564916,
+        "f1": 0.9965315627787137,
+        "support": 15135
+      },
+      {
+        "class_label": 4,
+        "class_name": "Soybeans",
+        "precision": 0.9891046897205116,
+        "recall": 0.9867008708566799,
+        "f1": 0.9879013180128422,
+        "support": 14813
+      },
+      {
+        "class_label": 5,
+        "class_name": "Oats",
+        "precision": 0.9505776636713735,
+        "recall": 0.9430117796879974,
+        "f1": 0.9467796068403388,
+        "support": 9423
+      },
+      {
+        "class_label": 6,
+        "class_name": "Wheat",
+        "precision": 0.9687445229888415,
+        "recall": 0.9745518660005877,
+        "f1": 0.9716395171686394,
+        "support": 17015
+      },
+      {
+        "class_label": 7,
+        "class_name": "Broadleaf",
+        "precision": 0.9082969432314411,
+        "recall": 0.9082969432314411,
+        "f1": 0.9082969432314411,
+        "support": 229
+      }
+    ],
+    "confusion_matrix": [
+      [
+        7705,
+        6,
+        4,
+        79,
+        17,
+        12,
+        9
+      ],
+      [
+        3,
+        713,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        6,
+        15084,
+        16,
+        6,
+        10,
+        2
+      ],
+      [
+        50,
+        3,
+        26,
+        14616,
+        56,
+        62,
+        0
+      ],
+      [
+        27,
+        0,
+        10,
+        42,
+        8886,
+        451,
+        7
+      ],
+      [
+        17,
+        0,
+        10,
+        22,
+        381,
+        16582,
+        3
+      ],
+      [
+        17,
+        0,
+        2,
+        0,
+        2,
+        0,
+        208
+      ]
+    ],
+    "class_labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "ECI": 0.9999999999999999,
+    "runtime_seconds": 550.0959354000006,
+    "runtime_components_seconds": {
+      "selection": 537.2664738000021,
+      "final_xgboost_fit": 12.348006500000338,
+      "test_prediction_and_metrics": 0.4814550999981293
+    },
+    "test_rows": 65167,
+    "train_rows": 260667,
+    "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+    "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+    "test_evaluated_once": true,
+    "test_set_used_for_selection_or_tuning": false,
+    "selection_details": {
+      "selection_source": "saved results/camo_fs/final_solution.json",
+      "optimization_runtime_included": 537.2664738000021,
+      "full_training_cv_macro_f1": 0.9690733416213796,
+      "test_used_for_selection": false
+    },
+    "final_model_configuration": {
+      "objective": "multi:softprob",
+      "eval_metric": "mlogloss",
+      "n_estimators": 300,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42,
+      "n_jobs": -1,
+      "tree_method": "hist",
+      "verbosity": 1,
+      "num_class": 7
+    },
+    "prediction_artifact": "results\\final\\method_results\\CAMO_FS_5_test_predictions.npz"
+  },
+  "all_comparison_metrics": {
+    "All_261": {
+      "selected_feature_count": 261,
+      "feature_reduction_percent": 0.0,
+      "accuracy": 0.9975601147820216,
+      "macro_f1": 0.9941128208480258,
+      "weighted_f1": 0.9975616744937909,
+      "kappa": 0.9969143580455272,
+      "eci": 0.9963866784556439,
+      "runtime_seconds": 135.43131859999994,
+      "selected_features": [
+        "EARLY_CH001_sigHH",
+        "EARLY_CH002_sigHV",
+        "EARLY_CH003_sigVV",
+        "EARLY_CH004_sigRR",
+        "EARLY_CH005_sigRL",
+        "EARLY_CH006_sigLL",
+        "EARLY_CH007_Rhhvv",
+        "EARLY_CH008_Rhvhh",
+        "EARLY_CH009_Rhvvv",
+        "EARLY_CH010_Rrrll",
+        "EARLY_CH011_Rrlrr",
+        "EARLY_CH012_Rrlll",
+        "EARLY_CH013_Rhh",
+        "EARLY_CH014_Rhv",
+        "EARLY_CH015_Rvv",
+        "EARLY_CH016_Rrr",
+        "EARLY_CH017_Rrl",
+        "EARLY_CH018_Rll",
+        "EARLY_CH019_Ro12",
+        "EARLY_CH020_Ro13",
+        "EARLY_CH021_Ro23",
+        "EARLY_CH022_Ro12cir",
+        "EARLY_CH023_Ro13cir",
+        "EARLY_CH024_Ro23cir",
+        "EARLY_CH025_l1",
+        "EARLY_CH026_l2",
+        "EARLY_CH027_l3",
+        "EARLY_CH028_H",
+        "EARLY_CH029_A",
+        "EARLY_CH030_a",
+        "EARLY_CH031_HA",
+        "EARLY_CH032_H1mA",
+        "EARLY_CH033_1mHA",
+        "EARLY_CH034_1mH1mA",
+        "EARLY_CH035_PH",
+        "EARLY_CH036_rvi",
+        "EARLY_CH037_paulalpha",
+        "EARLY_CH038_paulbeta",
+        "EARLY_CH039_paulgamma",
+        "EARLY_CH040_krogks",
+        "EARLY_CH041_krogkd",
+        "EARLY_CH042_krogkh",
+        "EARLY_CH043_freeodd",
+        "EARLY_CH044_freedbl",
+        "EARLY_CH045_freevol",
+        "EARLY_CH046_yamodd",
+        "EARLY_CH047_yamdbl",
+        "EARLY_CH048_yamhlx",
+        "EARLY_CH049_yamvol",
+        "EARLY_CH050_B",
+        "EARLY_CH051_G",
+        "EARLY_CH052_R",
+        "EARLY_CH053_Redge",
+        "EARLY_CH054_NIR",
+        "EARLY_CH055_NDVI",
+        "EARLY_CH056_SR",
+        "EARLY_CH057_RGRI",
+        "EARLY_CH058_EVI",
+        "EARLY_CH059_ARVI",
+        "EARLY_CH060_SAVI",
+        "EARLY_CH061_NDGI",
+        "EARLY_CH062_gNDVI",
+        "EARLY_CH063_MTVI2",
+        "EARLY_CH064_NDVIre",
+        "EARLY_CH065_SRre",
+        "EARLY_CH066_NDGIre",
+        "EARLY_CH067_RTVIcore",
+        "EARLY_CH068_RNDVI",
+        "EARLY_CH069_TCARI",
+        "EARLY_CH070_TVI",
+        "EARLY_CH071_PRI2",
+        "EARLY_CH072_MeanPC1",
+        "EARLY_CH073_VarPC1",
+        "EARLY_CH074_HomPC1",
+        "EARLY_CH075_ConPC1",
+        "EARLY_CH076_DisPC1",
+        "EARLY_CH077_EntPC1",
+        "EARLY_CH078_SecMomPC1",
+        "EARLY_CH079_CorPC1",
+        "EARLY_CH080_MeanPC2",
+        "EARLY_CH081_VarPC2",
+        "EARLY_CH082_HomPC2",
+        "EARLY_CH083_ConPC2",
+        "EARLY_CH084_DisPC2",
+        "EARLY_CH085_EntPC2",
+        "EARLY_CH086_SecMomPC2",
+        "EARLY_CH087_CorPC2",
+        "TRANSITION_CH001_sigHH",
+        "TRANSITION_CH002_sigHV",
+        "TRANSITION_CH003_sigVV",
+        "TRANSITION_CH004_sigRR",
+        "TRANSITION_CH005_sigRL",
+        "TRANSITION_CH006_sigLL",
+        "TRANSITION_CH007_Rhhvv",
+        "TRANSITION_CH008_Rhvhh",
+        "TRANSITION_CH009_Rhvvv",
+        "TRANSITION_CH010_Rrrll",
+        "TRANSITION_CH011_Rrlrr",
+        "TRANSITION_CH012_Rrlll",
+        "TRANSITION_CH013_Rhh",
+        "TRANSITION_CH014_Rhv",
+        "TRANSITION_CH015_Rvv",
+        "TRANSITION_CH016_Rrr",
+        "TRANSITION_CH017_Rrl",
+        "TRANSITION_CH018_Rll",
+        "TRANSITION_CH019_Ro12",
+        "TRANSITION_CH020_Ro13",
+        "TRANSITION_CH021_Ro23",
+        "TRANSITION_CH022_Ro12cir",
+        "TRANSITION_CH023_Ro13cir",
+        "TRANSITION_CH024_Ro23cir",
+        "TRANSITION_CH025_l1",
+        "TRANSITION_CH026_l2",
+        "TRANSITION_CH027_l3",
+        "TRANSITION_CH028_H",
+        "TRANSITION_CH029_A",
+        "TRANSITION_CH030_a",
+        "TRANSITION_CH031_HA",
+        "TRANSITION_CH032_H1mA",
+        "TRANSITION_CH033_1mHA",
+        "TRANSITION_CH034_1mH1mA",
+        "TRANSITION_CH035_PH",
+        "TRANSITION_CH036_rvi",
+        "TRANSITION_CH037_paulalpha",
+        "TRANSITION_CH038_paulbeta",
+        "TRANSITION_CH039_paulgamma",
+        "TRANSITION_CH040_krogks",
+        "TRANSITION_CH041_krogkd",
+        "TRANSITION_CH042_krogkh",
+        "TRANSITION_CH043_freeodd",
+        "TRANSITION_CH044_freedbl",
+        "TRANSITION_CH045_freevol",
+        "TRANSITION_CH046_yamodd",
+        "TRANSITION_CH047_yamdbl",
+        "TRANSITION_CH048_yamhlx",
+        "TRANSITION_CH049_yamvol",
+        "TRANSITION_CH050_B",
+        "TRANSITION_CH051_G",
+        "TRANSITION_CH052_R",
+        "TRANSITION_CH053_Redge",
+        "TRANSITION_CH054_NIR",
+        "TRANSITION_CH055_NDVI",
+        "TRANSITION_CH056_SR",
+        "TRANSITION_CH057_RGRI",
+        "TRANSITION_CH058_EVI",
+        "TRANSITION_CH059_ARVI",
+        "TRANSITION_CH060_SAVI",
+        "TRANSITION_CH061_NDGI",
+        "TRANSITION_CH062_gNDVI",
+        "TRANSITION_CH063_MTVI2",
+        "TRANSITION_CH064_NDVIre",
+        "TRANSITION_CH065_SRre",
+        "TRANSITION_CH066_NDGIre",
+        "TRANSITION_CH067_RTVIcore",
+        "TRANSITION_CH068_RNDVI",
+        "TRANSITION_CH069_TCARI",
+        "TRANSITION_CH070_TVI",
+        "TRANSITION_CH071_PRI2",
+        "TRANSITION_CH072_MeanPC1",
+        "TRANSITION_CH073_VarPC1",
+        "TRANSITION_CH074_HomPC1",
+        "TRANSITION_CH075_ConPC1",
+        "TRANSITION_CH076_DisPC1",
+        "TRANSITION_CH077_EntPC1",
+        "TRANSITION_CH078_SecMomPC1",
+        "TRANSITION_CH079_CorPC1",
+        "TRANSITION_CH080_MeanPC2",
+        "TRANSITION_CH081_VarPC2",
+        "TRANSITION_CH082_HomPC2",
+        "TRANSITION_CH083_ConPC2",
+        "TRANSITION_CH084_DisPC2",
+        "TRANSITION_CH085_EntPC2",
+        "TRANSITION_CH086_SecMomPC2",
+        "TRANSITION_CH087_CorPC2",
+        "LATE_CH001_sigHH",
+        "LATE_CH002_sigHV",
+        "LATE_CH003_sigVV",
+        "LATE_CH004_sigRR",
+        "LATE_CH005_sigRL",
+        "LATE_CH006_sigLL",
+        "LATE_CH007_Rhhvv",
+        "LATE_CH008_Rhvhh",
+        "LATE_CH009_Rhvvv",
+        "LATE_CH010_Rrrll",
+        "LATE_CH011_Rrlrr",
+        "LATE_CH012_Rrlll",
+        "LATE_CH013_Rhh",
+        "LATE_CH014_Rhv",
+        "LATE_CH015_Rvv",
+        "LATE_CH016_Rrr",
+        "LATE_CH017_Rrl",
+        "LATE_CH018_Rll",
+        "LATE_CH019_Ro12",
+        "LATE_CH020_Ro13",
+        "LATE_CH021_Ro23",
+        "LATE_CH022_Ro12cir",
+        "LATE_CH023_Ro13cir",
+        "LATE_CH024_Ro23cir",
+        "LATE_CH025_l1",
+        "LATE_CH026_l2",
+        "LATE_CH027_l3",
+        "LATE_CH028_H",
+        "LATE_CH029_A",
+        "LATE_CH030_a",
+        "LATE_CH031_HA",
+        "LATE_CH032_H1mA",
+        "LATE_CH033_1mHA",
+        "LATE_CH034_1mH1mA",
+        "LATE_CH035_PH",
+        "LATE_CH036_rvi",
+        "LATE_CH037_paulalpha",
+        "LATE_CH038_paulbeta",
+        "LATE_CH039_paulgamma",
+        "LATE_CH040_krogks",
+        "LATE_CH041_krogkd",
+        "LATE_CH042_krogkh",
+        "LATE_CH043_freeodd",
+        "LATE_CH044_freedbl",
+        "LATE_CH045_freevol",
+        "LATE_CH046_yamodd",
+        "LATE_CH047_yamdbl",
+        "LATE_CH048_yamhlx",
+        "LATE_CH049_yamvol",
+        "LATE_CH050_B",
+        "LATE_CH051_G",
+        "LATE_CH052_R",
+        "LATE_CH053_Redge",
+        "LATE_CH054_NIR",
+        "LATE_CH055_NDVI",
+        "LATE_CH056_SR",
+        "LATE_CH057_RGRI",
+        "LATE_CH058_EVI",
+        "LATE_CH059_ARVI",
+        "LATE_CH060_SAVI",
+        "LATE_CH061_NDGI",
+        "LATE_CH062_gNDVI",
+        "LATE_CH063_MTVI2",
+        "LATE_CH064_NDVIre",
+        "LATE_CH065_SRre",
+        "LATE_CH066_NDGIre",
+        "LATE_CH067_RTVIcore",
+        "LATE_CH068_RNDVI",
+        "LATE_CH069_TCARI",
+        "LATE_CH070_TVI",
+        "LATE_CH071_PRI2",
+        "LATE_CH072_MeanPC1",
+        "LATE_CH073_VarPC1",
+        "LATE_CH074_HomPC1",
+        "LATE_CH075_ConPC1",
+        "LATE_CH076_DisPC1",
+        "LATE_CH077_EntPC1",
+        "LATE_CH078_SecMomPC1",
+        "LATE_CH079_CorPC1",
+        "LATE_CH080_MeanPC2",
+        "LATE_CH081_VarPC2",
+        "LATE_CH082_HomPC2",
+        "LATE_CH083_ConPC2",
+        "LATE_CH084_DisPC2",
+        "LATE_CH085_EntPC2",
+        "LATE_CH086_SecMomPC2",
+        "LATE_CH087_CorPC2"
+      ]
+    },
+    "Mutual_Information_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9242407967222674,
+      "macro_f1": 0.8932172964972741,
+      "weighted_f1": 0.9242153995033299,
+      "kappa": 0.9041708070807358,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 25.735580600001413,
+      "selected_features": [
+        "TRANSITION_CH051_G",
+        "TRANSITION_CH053_Redge",
+        "TRANSITION_CH052_R",
+        "TRANSITION_CH064_NDVIre",
+        "TRANSITION_CH065_SRre"
+      ]
+    },
+    "RFE_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9427777863028833,
+      "macro_f1": 0.9354085728955829,
+      "weighted_f1": 0.9424945206452091,
+      "kappa": 0.9275666066871704,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 14.017513300001156,
+      "selected_features": [
+        "EARLY_CH039_paulgamma",
+        "EARLY_CH053_Redge",
+        "TRANSITION_CH060_SAVI",
+        "TRANSITION_CH065_SRre",
+        "TRANSITION_CH068_RNDVI"
+      ]
+    },
+    "RandomForest_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9168137247379808,
+      "macro_f1": 0.8640977857129443,
+      "weighted_f1": 0.9163983935776824,
+      "kappa": 0.8946580021366817,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 24.010919599997578,
+      "selected_features": [
+        "TRANSITION_CH064_NDVIre",
+        "EARLY_CH053_Redge",
+        "TRANSITION_CH065_SRre",
+        "TRANSITION_CH062_gNDVI",
+        "TRANSITION_CH051_G"
+      ]
+    },
+    "SingleObjectiveGA_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9734221308330904,
+      "macro_f1": 0.9688593225310423,
+      "weighted_f1": 0.9734136829147458,
+      "kappa": 0.9663890726837384,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 35.87005170000339,
+      "selected_features": [
+        "TRANSITION_CH040_krogks",
+        "TRANSITION_CH062_gNDVI",
+        "LATE_CH013_Rhh",
+        "LATE_CH026_l2",
+        "LATE_CH031_HA"
+      ]
+    },
+    "ContextFreeNSGAII_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9567419092485461,
+      "macro_f1": 0.9489499206337826,
+      "weighted_f1": 0.95647477324365,
+      "kappa": 0.9452293470395122,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 44.19936299999972,
+      "selected_features": [
+        "EARLY_CH026_l2",
+        "EARLY_CH064_NDVIre",
+        "TRANSITION_CH005_sigRL",
+        "TRANSITION_CH056_SR",
+        "TRANSITION_CH069_TCARI"
+      ]
+    },
+    "CAMO_FS_5": {
+      "selected_feature_count": 5,
+      "feature_reduction_percent": 98.08429118773945,
+      "accuracy": 0.9789310540611046,
+      "macro_f1": 0.968552239821049,
+      "weighted_f1": 0.9789200474142208,
+      "kappa": 0.9733509140798849,
+      "eci": 0.9999999999999999,
+      "runtime_seconds": 550.0959354000006,
+      "selected_features": [
+        "TRANSITION_CH051_G",
+        "TRANSITION_CH055_NDVI",
+        "LATE_CH003_sigVV",
+        "LATE_CH015_Rvv",
+        "LATE_CH027_l3"
+      ]
+    }
+  },
+  "selected_features": [
+    "TRANSITION_CH051_G",
+    "TRANSITION_CH055_NDVI",
+    "LATE_CH003_sigVV",
+    "LATE_CH015_Rvv",
+    "LATE_CH027_l3"
+  ],
+  "selected_feature_count": 5,
+  "representation_counts": {
+    "EARLY": 0,
+    "TRANSITION": 2,
+    "LATE": 3
+  },
+  "sensor_counts": {
+    "radar": 3,
+    "optical": 2
+  },
+  "ECI": {
+    "overall": 0.9963866784556439,
+    "selected_subset": 0.9999999999999999
+  },
+  "feature_reduction_percent": 98.08429118773945,
+  "runtimes_seconds": {
+    "All_261": 135.43131859999994,
+    "Mutual_Information_5": 25.735580600001413,
+    "RFE_5": 14.017513300001156,
+    "RandomForest_5": 24.010919599997578,
+    "SingleObjectiveGA_5": 35.87005170000339,
+    "ContextFreeNSGAII_5": 44.19936299999972,
+    "CAMO_FS_5": 550.0959354000006
+  },
+  "bootstrap_ci": {
+    "method": "nonparametric row bootstrap of the one saved test prediction vector; not independent experimental runs",
+    "replicates": 1000,
+    "seed": 42,
+    "accuracy_95_percentile_ci": [
+      0.9778108551874415,
+      0.980081943314868
+    ],
+    "macro_f1_95_percentile_ci": [
+      0.9642843569211279,
+      0.9726298317192011
+    ]
+  },
+  "strongest_baseline_selector_by_single_test_macro_f1": "SingleObjectiveGA_5",
+  "random_seed": 42,
+  "limitations": [
+    "The source contains two acquisition dates, not three verified phenological stages; EARLY/TRANSITION/LATE are operational temporal representations.",
+    "Random stratified split is IID-style, not spatially independent; source rows are class-block ordered and spatial/field IDs are unavailable.",
+    "Exact feature-vector overlaps with conflicting labels exist.",
+    "CAMO-FS evolutionary search used a 10,000-row, one-holdout, 30-round surrogate objective; Broadleaf had 35 rows in that sample.",
+    "The fixed-K context-free NSGA-II archive collapsed to one solution; subset size was constant and observed subset ECI was 1.0, so its multi-objective comparison was degenerate.",
+    "Only one deterministic optimization run was performed; no statistical significance test is claimed.",
+    "The SHAP/XGBoost compatibility shim affects expected-value bookkeeping; feature contributions were checked against native TreeSHAP on a deterministic sample.",
+    "Bootstrap intervals describe row resampling of one test prediction vector, not independent runs.",
+    "No spatial generalization or universal superiority claim is supported."
+  ],
+  "software": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "pandas": "2.3.0",
+    "scikit_learn": "1.7.0",
+    "xgboost": "3.2.0",
+    "matplotlib": "3.10.3"
+  }
+}

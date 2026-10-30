@@ -1,0 +1,32 @@
+{
+  "method": "RFE_5",
+  "selected_features": [
+    "EARLY_CH039_paulgamma",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH060_SAVI",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH068_RNDVI"
+  ],
+  "selected_feature_indices_zero_based": [
+    38,
+    52,
+    146,
+    151,
+    154
+  ],
+  "selection_runtime_seconds": 0.42651000000114436,
+  "selection_details": {
+    "selector": "sklearn RFE with ExtraTreesClassifier",
+    "sample_rows": 20000,
+    "n_estimators": 16,
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "step": 0.5,
+    "random_state": 42,
+    "training_only": true
+  },
+  "training_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_features_or_labels_used_for_selection": false
+}

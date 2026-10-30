@@ -1,0 +1,33 @@
+{
+  "selected_features": [
+    "EARLY_CH026_l2",
+    "EARLY_CH064_NDVIre",
+    "TRANSITION_CH005_sigRL",
+    "TRANSITION_CH056_SR",
+    "TRANSITION_CH069_TCARI"
+  ],
+  "selection_runtime_seconds": 30.51780350000263,
+  "details": {
+    "search_sample_size": 10000,
+    "fit_rows": 8000,
+    "validation_rows": 2000,
+    "n_estimators": 30,
+    "same_seed42_search_sample_as_CAMO_FS": true,
+    "test_rows_used": false,
+    "population_size": 20,
+    "generations": 10,
+    "chromosome": "261-bit vector with exact K=5",
+    "objectives": [
+      "1-Macro-F1",
+      "selected/261 (constant under K=5)",
+      "1-ECI from stored fold rankings"
+    ],
+    "initialization": "uniform random K=5 subsets",
+    "crossover": "uniform, p=0.9 with random K repair",
+    "mutation": "uniform bit mutation p=0.03 with random K repair; no SHAP prior or guidance",
+    "selection": "weighted distance-to-ideal among context-free Pareto archive",
+    "weighted_distance": 0.0,
+    "archive_size": 1,
+    "unique_model_fits": 220
+  }
+}

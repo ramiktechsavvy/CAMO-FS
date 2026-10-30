@@ -1,0 +1,50 @@
+{
+  "method": "seed-42 sample of 256 original row positions and 17 channels selected evenly from audit-backed metadata; raw ZIP values re-read directly",
+  "sampled_rows": 256,
+  "sampled_channels": 17,
+  "scalar_transition_checks": 4352,
+  "transition_exactly_equals_raw_july14_minus_july5": true,
+  "exact_source_transition_matches": 4352,
+  "transition_equals_stored_float32_late_minus_early_exactly": false,
+  "stored_snapshot_exact_matches": 240,
+  "max_abs_residual_against_stored_float32_snapshots": 1.8768310532379928e-06,
+  "note": "TRANSITION was computed from full-precision parsed raw values; EARLY and LATE are stored as float32, so subtracting the stored snapshots may differ by float32 rounding.",
+  "representation_statistics": {
+    "EARLY": {
+      "feature_count": 87,
+      "pooled_value_count": 28347558,
+      "min": -34.30799865722656,
+      "max": 556.0,
+      "mean": -0.293887844039134,
+      "std_population": 9.248872241244737,
+      "nan_count": 0,
+      "positive_infinity_count": 0,
+      "negative_infinity_count": 0,
+      "finite": true
+    },
+    "TRANSITION": {
+      "feature_count": 87,
+      "pooled_value_count": 28347558,
+      "min": -45285.4,
+      "max": 1105853.05,
+      "mean": 8366.186979118258,
+      "std_population": 61205.20789006771,
+      "nan_count": 0,
+      "positive_infinity_count": 0,
+      "negative_infinity_count": 0,
+      "finite": true
+    },
+    "LATE": {
+      "feature_count": 87,
+      "pooled_value_count": 28347558,
+      "min": -45280.0,
+      "max": 1105900.0,
+      "mean": 8365.893091273701,
+      "std_population": 61208.02529314234,
+      "nan_count": 0,
+      "positive_infinity_count": 0,
+      "negative_infinity_count": 0,
+      "finite": true
+    }
+  }
+}

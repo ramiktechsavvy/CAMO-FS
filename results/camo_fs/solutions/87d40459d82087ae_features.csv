@@ -1,0 +1,15 @@
+feature_index_zero_based,feature_name,representation,channel_id,source_july5_column,source_july14_column,sensor,measurement_name,date_early,date_late,transformation
+44,EARLY_CH045_freevol,EARLY,CH045,f45,f94,radar,freevol,2012-07-05,2012-07-14,identity: July 5 measurement
+45,EARLY_CH046_yamodd,EARLY,CH046,f46,f95,radar,yamodd,2012-07-05,2012-07-14,identity: July 5 measurement
+49,EARLY_CH050_B,EARLY,CH050,f99,f137,optical,B,2012-07-05,2012-07-14,identity: July 5 measurement
+71,EARLY_CH072_MeanPC1,EARLY,CH072,f121,f159,optical,MeanPC1,2012-07-05,2012-07-14,identity: July 5 measurement
+137,TRANSITION_CH051_G,TRANSITION,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+141,TRANSITION_CH055_NDVI,TRANSITION,CH055,f104,f142,optical,NDVI,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+166,TRANSITION_CH080_MeanPC2,TRANSITION,CH080,f129,f167,optical,MeanPC2,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+176,LATE_CH003_sigVV,LATE,CH003,f3,f52,radar,sigVV,2012-07-05,2012-07-14,identity: July 14 measurement
+181,LATE_CH008_Rhvhh,LATE,CH008,f8,f57,radar,Rhvhh,2012-07-05,2012-07-14,identity: July 14 measurement
+188,LATE_CH015_Rvv,LATE,CH015,f15,f64,radar,Rvv,2012-07-05,2012-07-14,identity: July 14 measurement
+219,LATE_CH046_yamodd,LATE,CH046,f46,f95,radar,yamodd,2012-07-05,2012-07-14,identity: July 14 measurement
+223,LATE_CH050_B,LATE,CH050,f99,f137,optical,B,2012-07-05,2012-07-14,identity: July 14 measurement
+224,LATE_CH051_G,LATE,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,identity: July 14 measurement
+237,LATE_CH064_NDVIre,LATE,CH064,f113,f151,optical,NDVIre,2012-07-05,2012-07-14,identity: July 14 measurement

@@ -1,0 +1,7 @@
+{
+  "total_seconds": 537.2664738000021,
+  "search_seconds": 484.2073070000006,
+  "final_full_training_5fold_cv_seconds": 51.67635700000028,
+  "candidate_model_fit_count": 2169,
+  "candidate_fit_seconds_sum": 452.40873429996645
+}

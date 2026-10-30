@@ -1,0 +1,183 @@
+{
+  "method": "CAMO_FS_5",
+  "selected_feature_count": 5,
+  "selected_features": [
+    "TRANSITION_CH051_G",
+    "TRANSITION_CH055_NDVI",
+    "LATE_CH003_sigVV",
+    "LATE_CH015_Rvv",
+    "LATE_CH027_l3"
+  ],
+  "metrics": {
+    "accuracy": 0.9789310540611046,
+    "macro_f1": 0.968552239821049,
+    "weighted_f1": 0.9789200474142208,
+    "kappa": 0.9733509140798849
+  },
+  "classwise": [
+    {
+      "class_label": 1,
+      "class_name": "Corn",
+      "precision": 0.9840357598978289,
+      "recall": 0.9837844739530133,
+      "f1": 0.9839101008811135,
+      "support": 7832
+    },
+    {
+      "class_label": 2,
+      "class_name": "Peas",
+      "precision": 0.9793956043956044,
+      "recall": 0.9902777777777778,
+      "f1": 0.9848066298342542,
+      "support": 720
+    },
+    {
+      "class_label": 3,
+      "class_name": "Canola",
+      "precision": 0.9964328180737217,
+      "recall": 0.9966303270564916,
+      "f1": 0.9965315627787137,
+      "support": 15135
+    },
+    {
+      "class_label": 4,
+      "class_name": "Soybeans",
+      "precision": 0.9891046897205116,
+      "recall": 0.9867008708566799,
+      "f1": 0.9879013180128422,
+      "support": 14813
+    },
+    {
+      "class_label": 5,
+      "class_name": "Oats",
+      "precision": 0.9505776636713735,
+      "recall": 0.9430117796879974,
+      "f1": 0.9467796068403388,
+      "support": 9423
+    },
+    {
+      "class_label": 6,
+      "class_name": "Wheat",
+      "precision": 0.9687445229888415,
+      "recall": 0.9745518660005877,
+      "f1": 0.9716395171686394,
+      "support": 17015
+    },
+    {
+      "class_label": 7,
+      "class_name": "Broadleaf",
+      "precision": 0.9082969432314411,
+      "recall": 0.9082969432314411,
+      "f1": 0.9082969432314411,
+      "support": 229
+    }
+  ],
+  "confusion_matrix": [
+    [
+      7705,
+      6,
+      4,
+      79,
+      17,
+      12,
+      9
+    ],
+    [
+      3,
+      713,
+      2,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      11,
+      6,
+      15084,
+      16,
+      6,
+      10,
+      2
+    ],
+    [
+      50,
+      3,
+      26,
+      14616,
+      56,
+      62,
+      0
+    ],
+    [
+      27,
+      0,
+      10,
+      42,
+      8886,
+      451,
+      7
+    ],
+    [
+      17,
+      0,
+      10,
+      22,
+      381,
+      16582,
+      3
+    ],
+    [
+      17,
+      0,
+      2,
+      0,
+      2,
+      0,
+      208
+    ]
+  ],
+  "class_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ECI": 0.9999999999999999,
+  "runtime_seconds": 550.0959354000006,
+  "runtime_components_seconds": {
+    "selection": 537.2664738000021,
+    "final_xgboost_fit": 12.348006500000338,
+    "test_prediction_and_metrics": 0.4814550999981293
+  },
+  "test_rows": 65167,
+  "train_rows": 260667,
+  "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_evaluated_once": true,
+  "test_set_used_for_selection_or_tuning": false,
+  "selection_details": {
+    "selection_source": "saved results/camo_fs/final_solution.json",
+    "optimization_runtime_included": 537.2664738000021,
+    "full_training_cv_macro_f1": 0.9690733416213796,
+    "test_used_for_selection": false
+  },
+  "final_model_configuration": {
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 1,
+    "num_class": 7
+  },
+  "prediction_artifact": "results\\final\\method_results\\CAMO_FS_5_test_predictions.npz"
+}

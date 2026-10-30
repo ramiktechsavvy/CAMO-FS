@@ -1,0 +1,35 @@
+{
+  "method": "Mutual_Information_5",
+  "selected_features": [
+    "TRANSITION_CH051_G",
+    "TRANSITION_CH053_Redge",
+    "TRANSITION_CH052_R",
+    "TRANSITION_CH064_NDVIre",
+    "TRANSITION_CH065_SRre"
+  ],
+  "selected_feature_indices_zero_based": [
+    137,
+    139,
+    138,
+    150,
+    151
+  ],
+  "selection_runtime_seconds": 12.971391399998538,
+  "selection_details": {
+    "selector": "mutual_info_classif",
+    "sample_rows": 60000,
+    "n_neighbors": 3,
+    "random_state": 42,
+    "selected_mi_scores": [
+      1.0910447028802361,
+      0.973638627611586,
+      0.9250153619888748,
+      0.9056084636563422,
+      0.869575312414369
+    ],
+    "training_only": true
+  },
+  "training_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_features_or_labels_used_for_selection": false
+}

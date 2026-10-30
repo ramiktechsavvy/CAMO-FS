@@ -1,0 +1,188 @@
+{
+  "method": "RFE_5",
+  "selected_feature_count": 5,
+  "selected_features": [
+    "EARLY_CH039_paulgamma",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH060_SAVI",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH068_RNDVI"
+  ],
+  "metrics": {
+    "accuracy": 0.9427777863028833,
+    "macro_f1": 0.9354085728955829,
+    "weighted_f1": 0.9424945206452091,
+    "kappa": 0.9275666066871704
+  },
+  "classwise": [
+    {
+      "class_label": 1,
+      "class_name": "Corn",
+      "precision": 0.9708688462027731,
+      "recall": 0.9744637385086823,
+      "f1": 0.9726629707512904,
+      "support": 7832
+    },
+    {
+      "class_label": 2,
+      "class_name": "Peas",
+      "precision": 0.9902097902097902,
+      "recall": 0.9833333333333333,
+      "f1": 0.9867595818815331,
+      "support": 720
+    },
+    {
+      "class_label": 3,
+      "class_name": "Canola",
+      "precision": 0.9900494233937397,
+      "recall": 0.9926660059464817,
+      "f1": 0.9913559881227317,
+      "support": 15135
+    },
+    {
+      "class_label": 4,
+      "class_name": "Soybeans",
+      "precision": 0.9822961010879113,
+      "recall": 0.9813677175453993,
+      "f1": 0.981831689855464,
+      "support": 14813
+    },
+    {
+      "class_label": 5,
+      "class_name": "Oats",
+      "precision": 0.8490356905342497,
+      "recall": 0.8129045951395522,
+      "f1": 0.8305773922472215,
+      "support": 9423
+    },
+    {
+      "class_label": 6,
+      "class_name": "Wheat",
+      "precision": 0.9022664519098021,
+      "recall": 0.921833676168087,
+      "f1": 0.9119451146835664,
+      "support": 17015
+    },
+    {
+      "class_label": 7,
+      "class_name": "Broadleaf",
+      "precision": 0.909952606635071,
+      "recall": 0.8384279475982532,
+      "f1": 0.8727272727272727,
+      "support": 229
+    }
+  ],
+  "confusion_matrix": [
+    [
+      7632,
+      1,
+      40,
+      113,
+      22,
+      13,
+      11
+    ],
+    [
+      1,
+      708,
+      3,
+      6,
+      1,
+      0,
+      1
+    ],
+    [
+      22,
+      2,
+      15024,
+      61,
+      19,
+      7,
+      0
+    ],
+    [
+      111,
+      0,
+      57,
+      14537,
+      75,
+      33,
+      0
+    ],
+    [
+      27,
+      1,
+      29,
+      56,
+      7660,
+      1646,
+      4
+    ],
+    [
+      45,
+      0,
+      15,
+      26,
+      1241,
+      15685,
+      3
+    ],
+    [
+      23,
+      3,
+      7,
+      0,
+      4,
+      0,
+      192
+    ]
+  ],
+  "class_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ECI": 0.9999999999999999,
+  "runtime_seconds": 14.017513300001156,
+  "runtime_components_seconds": {
+    "selection": 0.42651000000114436,
+    "final_xgboost_fit": 13.14401960000032,
+    "test_prediction_and_metrics": 0.44698369999969145
+  },
+  "test_rows": 65167,
+  "train_rows": 260667,
+  "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_evaluated_once": true,
+  "test_set_used_for_selection_or_tuning": false,
+  "selection_details": {
+    "selector": "sklearn RFE with ExtraTreesClassifier",
+    "sample_rows": 20000,
+    "n_estimators": 16,
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "step": 0.5,
+    "random_state": 42,
+    "training_only": true
+  },
+  "final_model_configuration": {
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 1,
+    "num_class": 7
+  },
+  "prediction_artifact": "results\\final\\method_results\\RFE_5_test_predictions.npz"
+}

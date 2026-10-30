@@ -1,0 +1,19 @@
+{
+  "selected_features": [
+    "TRANSITION_CH064_NDVIre",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH062_gNDVI",
+    "TRANSITION_CH051_G"
+  ],
+  "selection_runtime_seconds": 9.352285699998902,
+  "details": {
+    "selector": "RandomForestClassifier embedded feature_importances_",
+    "sample_rows": 60000,
+    "n_estimators": 80,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "training_only": true
+  }
+}

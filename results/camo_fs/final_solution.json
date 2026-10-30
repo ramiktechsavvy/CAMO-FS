@@ -1,0 +1,108 @@
+{
+  "solution_id": "4bc5e034598b736e",
+  "selected_feature_names": [
+    "TRANSITION_CH051_G",
+    "TRANSITION_CH055_NDVI",
+    "LATE_CH003_sigVV",
+    "LATE_CH015_Rvv",
+    "LATE_CH027_l3"
+  ],
+  "selected_feature_indices_zero_based": [
+    137,
+    141,
+    176,
+    188,
+    200
+  ],
+  "selected_feature_count": 5,
+  "representation_counts": {
+    "EARLY": 0,
+    "TRANSITION": 2,
+    "LATE": 3
+  },
+  "macro_f1": 0.9690733416213796,
+  "mean_fold_macro_f1": 0.9690783405362815,
+  "std_fold_macro_f1": 0.0014379725986953629,
+  "classification_error": 0.03092665837862041,
+  "ECI": 1.0,
+  "subset_ratio": 0.019157088122605363,
+  "explanation_instability": 0.0,
+  "weighted_distance_to_ideal": 0.08317434635144909,
+  "weighted_distance_normalized_surrogate_objectives": [
+    0.07998704428253368,
+    0.13636363636363635,
+    0.0
+  ],
+  "final_full_training_cv_objectives": [
+    0.03092665837862041,
+    0.019157088122605363,
+    0.0
+  ],
+  "random_seed": 42,
+  "final_evaluation": "stratified 5-fold CV over the complete saved training partition; test partition unused",
+  "final_cv": {
+    "folds": [
+      {
+        "fold": 1,
+        "train_rows": 208533,
+        "validation_rows": 52134,
+        "macro_f1": 0.9692271996654176,
+        "fit_seconds": 10.916492300002574
+      },
+      {
+        "fold": 2,
+        "train_rows": 208533,
+        "validation_rows": 52134,
+        "macro_f1": 0.9688742989580511,
+        "fit_seconds": 9.312934100002167
+      },
+      {
+        "fold": 3,
+        "train_rows": 208534,
+        "validation_rows": 52133,
+        "macro_f1": 0.9692355828257961,
+        "fit_seconds": 10.147027200000593
+      },
+      {
+        "fold": 4,
+        "train_rows": 208534,
+        "validation_rows": 52133,
+        "macro_f1": 0.9670052651752742,
+        "fit_seconds": 9.53226960000029
+      },
+      {
+        "fold": 5,
+        "train_rows": 208534,
+        "validation_rows": 52133,
+        "macro_f1": 0.9710493560568682,
+        "fit_seconds": 9.808727700001327
+      }
+    ],
+    "mean_fold_macro_f1": 0.9690783405362815,
+    "std_fold_macro_f1": 0.0014379725986953629,
+    "pooled_oof_macro_f1": 0.9690733416213796,
+    "fit_seconds": 49.71745090000695
+  },
+  "optimizer_configuration": {
+    "population_size": 60,
+    "generations": 40,
+    "crossover": "uniform",
+    "crossover_probability": 0.9,
+    "mutation": "SHAP-guided; selected drop pm*(1-pi_j), unselected add pm*pi_j",
+    "base_mutation_probability": 0.03,
+    "guided_initialization_fraction": 0.5,
+    "weights": {
+      "classification_error": 0.5,
+      "subset_size": 0.2,
+      "explanation_instability": 0.3
+    },
+    "selection_name": "weighted distance-to-ideal; described as knee-point selection only as paper terminology, not geometric knee detection",
+    "pareto_archive_cap": 500,
+    "search_surrogate": {
+      "stratified_train_only_rows": 10000,
+      "holdout_fraction": 0.2,
+      "n_estimators": 30,
+      "full_baseline_other_parameters": true
+    }
+  }
+}

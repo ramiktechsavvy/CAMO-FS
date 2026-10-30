@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.whl
+
+# Environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Experiment outputs and logs
+outputs/
+logs/
+*.log
+
+# Dataset files: keep directory placeholders, never commit data by default
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

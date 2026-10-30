@@ -1,0 +1,310 @@
+{
+  "row_order_sample_id": "zero-based original Parquet row position",
+  "segment_count": 10,
+  "segments": [
+    {
+      "segment": 1,
+      "start_row_inclusive": 0,
+      "end_row_exclusive": 32583,
+      "rows": 32583,
+      "train_rows": 26011,
+      "test_rows": 6572,
+      "class_counts": {
+        "1": 32583,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 1.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 2,
+      "start_row_inclusive": 32583,
+      "end_row_exclusive": 65166,
+      "rows": 32583,
+      "train_rows": 26084,
+      "test_rows": 6499,
+      "class_counts": {
+        "1": 6579,
+        "2": 3598,
+        "3": 22406,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.20191510910597552,
+        "2": 0.11042568210416474,
+        "3": 0.6876592087898598,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 3,
+      "start_row_inclusive": 65166,
+      "end_row_exclusive": 97750,
+      "rows": 32584,
+      "train_rows": 26101,
+      "test_rows": 6483,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 32584,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 1.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 4,
+      "start_row_inclusive": 97750,
+      "end_row_exclusive": 130333,
+      "rows": 32583,
+      "train_rows": 26073,
+      "test_rows": 6510,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 20683,
+        "4": 11900,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.6347788724181321,
+        "4": 0.36522112758186787,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 5,
+      "start_row_inclusive": 130333,
+      "end_row_exclusive": 162917,
+      "rows": 32584,
+      "train_rows": 26061,
+      "test_rows": 6523,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 32584,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 1.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 6,
+      "start_row_inclusive": 162917,
+      "end_row_exclusive": 195500,
+      "rows": 32583,
+      "train_rows": 26043,
+      "test_rows": 6540,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 29583,
+        "5": 3000,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.9079274468281006,
+        "5": 0.09207255317189945,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 7,
+      "start_row_inclusive": 195500,
+      "end_row_exclusive": 228083,
+      "rows": 32583,
+      "train_rows": 26096,
+      "test_rows": 6487,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 32583,
+        "6": 0,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 1.0,
+        "6": 0.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 8,
+      "start_row_inclusive": 228083,
+      "end_row_exclusive": 260667,
+      "rows": 32584,
+      "train_rows": 26149,
+      "test_rows": 6435,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 11534,
+        "6": 21050,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.3539774122268598,
+        "6": 0.6460225877731401,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 9,
+      "start_row_inclusive": 260667,
+      "end_row_exclusive": 293250,
+      "rows": 32583,
+      "train_rows": 26058,
+      "test_rows": 6525,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 32583,
+        "7": 0
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 1.0,
+        "7": 0.0
+      }
+    },
+    {
+      "segment": 10,
+      "start_row_inclusive": 293250,
+      "end_row_exclusive": 325834,
+      "rows": 32584,
+      "train_rows": 25991,
+      "test_rows": 6593,
+      "class_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 31441,
+        "7": 1143
+      },
+      "class_proportions": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.9649214338325559,
+        "7": 0.03507856616744415
+      }
+    }
+  ],
+  "label_by_segment_cramers_v": 0.748761669390834,
+  "observed_same_label_adjacent_rate": 0.9999815856589112,
+  "expected_same_label_adjacent_rate_under_random_order_given_class_counts": 0.20926851797614324,
+  "adjacent_same_label_rate_ratio": 4.778461640240171,
+  "total_label_runs": 7,
+  "longest_global_same_label_run": 85074,
+  "class_run_statistics": {
+    "1": {
+      "run_count": 1,
+      "longest_consecutive_run": 39162,
+      "mean_run_length": 39162.0
+    },
+    "2": {
+      "run_count": 1,
+      "longest_consecutive_run": 3598,
+      "mean_run_length": 3598.0
+    },
+    "3": {
+      "run_count": 1,
+      "longest_consecutive_run": 75673,
+      "mean_run_length": 75673.0
+    },
+    "4": {
+      "run_count": 1,
+      "longest_consecutive_run": 74067,
+      "mean_run_length": 74067.0
+    },
+    "5": {
+      "run_count": 1,
+      "longest_consecutive_run": 47117,
+      "mean_run_length": 47117.0
+    },
+    "6": {
+      "run_count": 1,
+      "longest_consecutive_run": 85074,
+      "mean_run_length": 85074.0
+    },
+    "7": {
+      "run_count": 1,
+      "longest_consecutive_run": 1143,
+      "mean_run_length": 1143.0
+    }
+  },
+  "interpretation_limit": "Row-order diagnostics cannot identify geography, field boundaries, or spatial leakage because no spatial/group identifier is present in this dataset."
+}

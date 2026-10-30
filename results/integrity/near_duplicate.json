@@ -1,0 +1,17 @@
+{
+  "method": "feature-wise z-score using full-dataset mean and population standard deviation; quantize to nearest 0.01 standard deviation and hash row vectors in 10,000-row chunks",
+  "precision": "two decimal places in standardized feature units",
+  "rows": 325834,
+  "unique_quantized_vectors": 325802,
+  "near_duplicate_groups_including_any_exact_duplicates": 32,
+  "rows_in_repeated_quantized_groups": 64,
+  "train_test_overlapping_repeated_quantized_vectors": 13,
+  "train_rows_in_cross_split_repeated_quantized_vectors": 13,
+  "test_rows_in_cross_split_repeated_quantized_vectors": 13,
+  "limitations": [
+    "Quantization detects only vectors that land in the same bins; near-equal vectors on opposite bin boundaries can be missed.",
+    "The 0.01-standard-deviation threshold is a diagnostic choice, not a domain-specific definition of duplicate observations.",
+    "A hash collision is theoretically possible; these results are approximate near-duplicate counts, not exact geometric nearest-neighbor results.",
+    "Standardization and hashing inspect feature similarity only and do not establish spatial identity or leakage."
+  ]
+}

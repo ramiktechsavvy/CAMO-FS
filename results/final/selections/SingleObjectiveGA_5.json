@@ -1,0 +1,38 @@
+{
+  "method": "SingleObjectiveGA_5",
+  "selected_features": [
+    "TRANSITION_CH040_krogks",
+    "TRANSITION_CH062_gNDVI",
+    "LATE_CH013_Rhh",
+    "LATE_CH026_l2",
+    "LATE_CH031_HA"
+  ],
+  "selected_feature_indices_zero_based": [
+    126,
+    148,
+    186,
+    199,
+    204
+  ],
+  "selection_runtime_seconds": 22.220185900001525,
+  "selection_details": {
+    "search_sample_size": 10000,
+    "fit_rows": 8000,
+    "validation_rows": 2000,
+    "n_estimators": 30,
+    "same_seed42_search_sample_as_CAMO_FS": true,
+    "test_rows_used": false,
+    "population_size": 20,
+    "generations": 10,
+    "objective": "maximize Macro-F1 only",
+    "k_constraint": 5,
+    "crossover": "uniform, p=0.9",
+    "mutation": "uniform random one-feature swap, p=0.25",
+    "random_state": 42,
+    "best_search_macro_f1": 0.9440065280931496,
+    "unique_model_fits": 159
+  },
+  "training_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_features_or_labels_used_for_selection": false
+}

@@ -1,0 +1,6 @@
+feature_index_zero_based,feature_name,representation,channel_id,source_july5_column,source_july14_column,sensor,measurement_name,date_early,date_late,transformation,mean_abs_shap,normalized_shap_prior
+137,TRANSITION_CH051_G,TRANSITION,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement,0.2432435278522795,0.8147495831172308
+141,TRANSITION_CH055_NDVI,TRANSITION,CH055,f104,f142,optical,NDVI,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement,0.2011475223396258,0.6737480804455378
+176,LATE_CH003_sigVV,LATE,CH003,f3,f52,radar,sigVV,2012-07-05,2012-07-14,identity: July 14 measurement,0.1518454777011025,0.5086097901455455
+188,LATE_CH015_Rvv,LATE,CH015,f15,f64,radar,Rvv,2012-07-05,2012-07-14,identity: July 14 measurement,0.1141957790664044,0.3825012908240819
+200,LATE_CH027_l3,LATE,CH027,f27,f76,radar,l3,2012-07-05,2012-07-14,identity: July 14 measurement,0.0225171378135623,0.0754216517437392

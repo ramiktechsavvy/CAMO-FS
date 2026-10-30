@@ -1,0 +1,48 @@
+# Project metadata and explicit experiment placeholders.
+project:
+  name: CAMO-FS
+  full_name: Context-Aware Multi-Objective Feature Selection for Smart Agriculture
+
+dataset:
+  source: UCI Crop Mapping using Fused Optical-Radar Dataset
+  uci_id: 525
+  full_samples: 325834
+  feature_count: 175
+  class_count: 7
+  experimental_samples: 60000
+  sampling: stratified
+  label_column: null # Set from authoritative dataset documentation.
+  feature_columns: null # Resolve from the dataset; do not infer names.
+
+task:
+  type: multiclass_classification
+  class_count: 7
+  growth_stages:
+    - Early
+    - Mid
+    - Late
+  stage_feature_mappings: null # Populate only from an authoritative source.
+
+model:
+  family: gradient_boosted_classifier
+  implementation: xgboost
+
+method:
+  name: SHAP-guided NSGA-II
+  objectives:
+    - name: classification_error
+      definition: 1 - Macro-F1
+    - name: relative_subset_size
+      definition: relative selected-feature subset size
+    - name: explanation_instability
+      definition: 1 - ECI
+  stage_wise_pareto_archives: true
+  knee_point_selection: true
+
+evaluation:
+  baselines: true
+  repeated_runs: true
+  bootstrap_validation: true
+  statistical_tests: true
+  explainability: true
+  ablation_studies: true

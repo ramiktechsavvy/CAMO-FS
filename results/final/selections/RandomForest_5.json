@@ -1,0 +1,30 @@
+{
+  "method": "RandomForest_5",
+  "selected_features": [
+    "TRANSITION_CH064_NDVIre",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH062_gNDVI",
+    "TRANSITION_CH051_G"
+  ],
+  "selected_feature_indices_zero_based": [
+    150,
+    52,
+    151,
+    148,
+    137
+  ],
+  "selection_runtime_seconds": 9.352285699998902,
+  "selection_details": {
+    "selector": "RandomForestClassifier embedded feature_importances_",
+    "sample_rows": 60000,
+    "n_estimators": 80,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "training_only": true
+  },
+  "training_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_features_or_labels_used_for_selection": false
+}

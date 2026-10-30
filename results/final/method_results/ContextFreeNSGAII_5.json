@@ -1,0 +1,200 @@
+{
+  "method": "ContextFreeNSGAII_5",
+  "selected_feature_count": 5,
+  "selected_features": [
+    "EARLY_CH026_l2",
+    "EARLY_CH064_NDVIre",
+    "TRANSITION_CH005_sigRL",
+    "TRANSITION_CH056_SR",
+    "TRANSITION_CH069_TCARI"
+  ],
+  "metrics": {
+    "accuracy": 0.9567419092485461,
+    "macro_f1": 0.9489499206337826,
+    "weighted_f1": 0.95647477324365,
+    "kappa": 0.9452293470395122
+  },
+  "classwise": [
+    {
+      "class_label": 1,
+      "class_name": "Corn",
+      "precision": 0.9637051039697543,
+      "recall": 0.9763789581205311,
+      "f1": 0.9700006342360626,
+      "support": 7832
+    },
+    {
+      "class_label": 2,
+      "class_name": "Peas",
+      "precision": 0.9956458635703919,
+      "recall": 0.9527777777777777,
+      "f1": 0.9737402413058907,
+      "support": 720
+    },
+    {
+      "class_label": 3,
+      "class_name": "Canola",
+      "precision": 0.9859803857039426,
+      "recall": 0.9897588371324744,
+      "f1": 0.9878659984173042,
+      "support": 15135
+    },
+    {
+      "class_label": 4,
+      "class_name": "Soybeans",
+      "precision": 0.9802902463719203,
+      "recall": 0.9804226017687167,
+      "f1": 0.9803564196030782,
+      "support": 14813
+    },
+    {
+      "class_label": 5,
+      "class_name": "Oats",
+      "precision": 0.9176470588235294,
+      "recall": 0.8608723336517032,
+      "f1": 0.8883535016152877,
+      "support": 9423
+    },
+    {
+      "class_label": 6,
+      "class_name": "Wheat",
+      "precision": 0.9270177447052089,
+      "recall": 0.9518072289156626,
+      "f1": 0.9392489488183268,
+      "support": 17015
+    },
+    {
+      "class_label": 7,
+      "class_name": "Broadleaf",
+      "precision": 0.9111111111111111,
+      "recall": 0.8951965065502183,
+      "f1": 0.9030837004405287,
+      "support": 229
+    }
+  ],
+  "confusion_matrix": [
+    [
+      7647,
+      1,
+      22,
+      75,
+      17,
+      54,
+      16
+    ],
+    [
+      9,
+      686,
+      22,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      19,
+      1,
+      14980,
+      115,
+      10,
+      10,
+      0
+    ],
+    [
+      72,
+      1,
+      125,
+      14523,
+      37,
+      55,
+      0
+    ],
+    [
+      73,
+      0,
+      26,
+      52,
+      8112,
+      1156,
+      4
+    ],
+    [
+      96,
+      0,
+      15,
+      47,
+      662,
+      16195,
+      0
+    ],
+    [
+      19,
+      0,
+      3,
+      0,
+      2,
+      0,
+      205
+    ]
+  ],
+  "class_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ECI": 0.9999999999999999,
+  "runtime_seconds": 44.19936299999972,
+  "runtime_components_seconds": {
+    "selection": 30.51780350000263,
+    "final_xgboost_fit": 13.231336199998623,
+    "test_prediction_and_metrics": 0.4502232999984699
+  },
+  "test_rows": 65167,
+  "train_rows": 260667,
+  "train_indices_sha256": "30d8f61a00bbddcab36efae0b51db19ed7aa5d5794095ec092574dfceb27d8c6",
+  "test_indices_sha256": "f1c7487bb970229b0c9fd906af894868e7c4003a6bc9538831c84d1308214978",
+  "test_evaluated_once": true,
+  "test_set_used_for_selection_or_tuning": false,
+  "selection_details": {
+    "search_sample_size": 10000,
+    "fit_rows": 8000,
+    "validation_rows": 2000,
+    "n_estimators": 30,
+    "same_seed42_search_sample_as_CAMO_FS": true,
+    "test_rows_used": false,
+    "population_size": 20,
+    "generations": 10,
+    "chromosome": "261-bit vector with exact K=5",
+    "objectives": [
+      "1-Macro-F1",
+      "selected/261 (constant under K=5)",
+      "1-ECI from stored fold rankings"
+    ],
+    "initialization": "uniform random K=5 subsets",
+    "crossover": "uniform, p=0.9 with random K repair",
+    "mutation": "uniform bit mutation p=0.03 with random K repair; no SHAP prior or guidance",
+    "selection": "weighted distance-to-ideal among context-free Pareto archive",
+    "weighted_distance": 0.0,
+    "archive_size": 1,
+    "unique_model_fits": 220
+  },
+  "final_model_configuration": {
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 1,
+    "num_class": 7
+  },
+  "prediction_artifact": "results\\final\\method_results\\ContextFreeNSGAII_5_test_predictions.npz"
+}

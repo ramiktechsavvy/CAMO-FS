@@ -1,0 +1,5 @@
+method,selected_feature_count,accuracy,macro_f1,weighted_f1,kappa,eci,interpretation
+All_261,261,0.9975601147820216,0.9941128208480258,0.9975616744937909,0.9969143580455272,0.9963866784556439,Reference without feature selection; describes change with feature reduction.
+SingleObjectiveGA_5,5,0.9734221308330904,0.9688593225310423,0.9734136829147458,0.9663890726837384,0.9999999999999999,Single-objective search; CAMO-FS contrast changes both objective structure and SHAP guidance.
+ContextFreeNSGAII_5,5,0.9567419092485461,0.9489499206337826,0.95647477324365,0.9452293470395122,0.9999999999999999,"No SHAP-guided initialization/mutation. Under fixed K=5, subset-size is constant and observed subset ECI was 1.0, so objectives 2 and 3 were degenerate and the archive collapsed to one solution; this is a limited context-free comparator."
+CAMO_FS_5,5,0.9789310540611046,0.968552239821049,0.9789200474142208,0.9733509140798849,0.9999999999999999,SHAP-guided multi-objective method reference.

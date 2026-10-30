@@ -1,0 +1,15 @@
+{
+  "definition": "ECI = (mean_pairwise_Kendall_tau + 1) / 2",
+  "fold_count": 5,
+  "pair_count": 10,
+  "overall_eci": 0.9963866784556439,
+  "representation_eci": {
+    "EARLY": 0.9952953755680298,
+    "TRANSITION": 0.9966319165998396,
+    "LATE": 0.9960438385458433
+  },
+  "operational_representation_labels_only": true,
+  "fold_rankings_source": "results/shap/fold_1_feature_importance.csv through fold_5_feature_importance.csv",
+  "rank_ties": "Kendall tau-b; saved fold ranks are ordinal SHAP-importance rankings.",
+  "singleton_subset_convention": "ECI=1 because no ranking disagreement can be observed for fewer than two selected features."
+}

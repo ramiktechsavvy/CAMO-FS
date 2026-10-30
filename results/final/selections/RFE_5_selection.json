@@ -1,0 +1,21 @@
+{
+  "selected_features": [
+    "EARLY_CH039_paulgamma",
+    "EARLY_CH053_Redge",
+    "TRANSITION_CH060_SAVI",
+    "TRANSITION_CH065_SRre",
+    "TRANSITION_CH068_RNDVI"
+  ],
+  "selection_runtime_seconds": 0.42651000000114436,
+  "details": {
+    "selector": "sklearn RFE with ExtraTreesClassifier",
+    "sample_rows": 20000,
+    "n_estimators": 16,
+    "max_depth": 12,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "step": 0.5,
+    "random_state": 42,
+    "training_only": true
+  }
+}

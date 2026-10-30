@@ -1,0 +1,3 @@
+feature_index_zero_based,feature_name,representation,channel_id,source_july5_column,source_july14_column,sensor,measurement_name,date_early,date_late,transformation
+137,TRANSITION_CH051_G,TRANSITION,CH051,f100,f138,optical,G,2012-07-05,2012-07-14,July 14 measurement minus July 5 measurement
+200,LATE_CH027_l3,LATE,CH027,f27,f76,radar,l3,2012-07-05,2012-07-14,identity: July 14 measurement
